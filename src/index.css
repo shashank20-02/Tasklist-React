@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-weight: normal;
+  text-align: center;
+  padding: 1rem 0;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 700px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(65, 65, 65, 0.422);
+}
+
+.listbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.listbar > button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.listbar > button:hover {
+  cursor: pointer;
+}
+
+.listbar > .active {
+  border-bottom: 3px solid blue;
+}
+
+.list-tabs {
+  min-width: 100%;
+}
+
+.list-tabs > ul {
+  list-style-type: none;
+}
+
+.list-tabs > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.list-item > form > input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.list-item > form > input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.list-item > .article {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item > .article > p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-wrap: wrap;
+}
+
+.list-item > .article > button {
+  background-color: transparent;
+  border: none;
+}
+
+.list-item > .article > button:hover {
+  cursor: pointer;
+}
+
+.checked > .article > p {
+  text-decoration: line-through;
+}
+
+.main-form {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.main-form > input[type="text"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(65, 65, 65, 0.422);
+  border-radius: 10px;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.main-form > button {
+  padding: 0.75rem 2rem;
+  background-color: rgb(49 151 255);
+  border: 2px solid rgb(49 151 255);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all;
+  transition-delay: 0.1s;
+}
+
+.main-form > button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.delete {
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background-color: rgb(255, 70, 70);
+  border: 1px solid rgb(255, 70, 70);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.delete:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  main {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .heading {
+    font-weight: normal;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+  }
+}
